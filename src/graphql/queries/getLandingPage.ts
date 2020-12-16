@@ -30,6 +30,15 @@ const GET_LANDING_PAGE = /* GraphQL */`
     }
   }
 
+  fragment sectionConcepts on LandingPage {
+    sectionConcepts {
+      title 
+      concepts {
+        title
+      }
+    }
+  }
+
   fragment header on LandingPage {
     header {
       title
@@ -51,6 +60,7 @@ const GET_LANDING_PAGE = /* GraphQL */`
       ...logo
       ...sectionAboutProject
       ...sectionTech
+      ...sectionConcepts
     }
   }
 `
