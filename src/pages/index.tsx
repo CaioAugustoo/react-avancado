@@ -19,12 +19,12 @@ import GET_LANDING_PAGE from 'graphql/queries/getLandingPage'
 
 import { LandingPageProps } from 'types/api'
 
-const Index = ({ logo, header, sectionAboutProject, sectionTech }: LandingPageProps) => (
+const Index = ({ logo, header, sectionAboutProject, sectionTech, sectionConcepts }: LandingPageProps) => (
   <>
     <SectionHero logo={logo} header={header} />
     <SectionAboutProject {...sectionAboutProject} />
     <SectionTech {...sectionTech} />
-    <SectionConcepts />
+    <SectionConcepts {...sectionConcepts}/>
     <SectionModules />
     <SectionAgenda />
     <PricingBox />
