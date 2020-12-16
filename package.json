@@ -35,6 +35,8 @@
     "typescript": "^3.9.5"
   },
   "dependencies": {
+    "graphql": "^15.4.0",
+    "graphql-request": "^3.3.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "next": "^9.4.4",
