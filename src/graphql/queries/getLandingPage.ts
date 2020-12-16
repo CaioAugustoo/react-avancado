@@ -1,22 +1,30 @@
 const GET_LANDING_PAGE = /* GraphQL */`
-  query GET_LANDING_PAGE {
-    landingPage {
-      header {
-        title
-        description
-        button {
-          label
-          url
-        }
-        image {
-          alternativeText
-          url
-        }
+  fragment logo on LandingPage {
+    logo {
+      alternativeText
+      url
+    }
+  }
+
+  fragment header on LandingPage {
+    header {
+      title
+      description
+      button {
+        label
+        url
       }
-      logo {
+      image {
         alternativeText
         url
       }
+    }
+  }
+
+  query GET_LANDING_PAGE {
+    landingPage {
+      ...header
+    ...logo
     }
   }
 `
