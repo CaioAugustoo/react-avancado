@@ -13,13 +13,6 @@ export type LogoProps = {
   url: string
 }
 
-export type LandingPageProps = {
-  logo: LogoProps
-  header: HeaderProps
-  sectionAboutProject: SectionAboutProjects
-  sectionTech: SectionTechs
-  sectionConcepts: SectionConcept
-}
 
 export type SectionAboutProjects = {
   title: string
@@ -46,4 +39,24 @@ export type Concept = {
 export type SectionConcept = {
   title: string
   concepts: Concept[]
+}
+
+export type Modules = {
+  title: string
+  subtitle: string
+  description: string
+}
+
+export type SectionModule = {
+  title: string
+  modules: Modules[]
+}
+
+export type LandingPageProps = {
+  logo: LogoProps
+  header: HeaderProps
+  sectionAboutProject: SectionAboutProjects
+  sectionTech: SectionTechs
+  sectionConcepts: SectionConcept
+  sectionModules: SectionModule
 }
