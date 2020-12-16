@@ -1,10 +1,11 @@
-import styled, { css, DefaultTheme } from 'styled-components'
-import media from 'styled-media-query'
+/* eslint-disable prettier/prettier */
+import styled, { css, DefaultTheme } from "styled-components";
+import media from "styled-media-query";
 
 type Props = {
-  wide: boolean
-  withPrice: boolean
-}
+  wide: boolean;
+  withPrice: boolean;
+};
 
 const buttonModifiers = {
   withPrice: (theme: DefaultTheme) => css`
@@ -16,11 +17,11 @@ const buttonModifiers = {
   wide: (theme: DefaultTheme) => css`
     padding: 1.3rem ${theme.spacings.medium};
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan("medium")`
       padding: 1.3rem ${theme.spacings.large};
     `}
   `
-}
+};
 
 export const ButtonWrapper = styled.a<Props>`
   ${({ theme, wide, withPrice }) => css`
@@ -40,4 +41,4 @@ export const ButtonWrapper = styled.a<Props>`
     ${wide && buttonModifiers.wide(theme)};
     ${withPrice && buttonModifiers.withPrice(theme)};
   `}
-`
+`;
