@@ -18,6 +18,7 @@ export type LandingPageProps = {
   header: HeaderProps
   sectionAboutProject: SectionAboutProjects
   sectionTech: SectionTechs
+  sectionConcepts: SectionConcept
 }
 
 export type SectionAboutProjects = {
@@ -36,4 +37,13 @@ export type TechIcon = {
 export type SectionTechs = {
   title: string
   techIcons: TechIcon[]
+}
+
+export type Concept = {
+  title: string
+}
+
+export type SectionConcept = {
+  title: string
+  concepts: Concept[]
 }
