@@ -16,19 +16,16 @@ export const User = styled.div`
   display: flex;
 `
 
-export const Image = styled.picture`
-  img {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 100%;
-  }
+export const Image = styled.img`
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
 `
 
 export const Name = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.small};
     font-weight: ${theme.font.bold};
-    margin-left: ${theme.spacings.xsmall};
   `}
 `
 
