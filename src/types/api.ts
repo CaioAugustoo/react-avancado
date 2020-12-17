@@ -86,6 +86,18 @@ export type SectionAbout = {
   socialLinks: SocialLink[]
 }
 
+export type Review = {
+  name: string
+  text: string
+  description: string
+  id?: number | string
+}
+
+export type SectionReview = {
+  title: string
+  reviews: Review[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -96,4 +108,5 @@ export type LandingPageProps = {
   sectionAgenda: SectionAgendaProp
   pricingBox: PrincingBox
   sectionAboutUs: SectionAbout
+  sectionReviews: SectionReview
 }
