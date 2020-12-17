@@ -1,39 +1,45 @@
-# Simple NextJS Quick Start
+# ⚛️ React Avançado
+Landing page de divulgação desenvolvido com NextJS.
 
-A simple project starter to work with React, NextJS and Styled Components
+## ℹ️ Sobre o projeto 
+Landing page de divulgação do curso React Avançado do Instrututor Willian Justen na Udemy. Desenvolvido com TypeScript e NextJS.
 
-You can see the example in [https://nextjs-quickstart.now.sh/](https://nextjs-quickstart.now.sh/)
+## ✨ Demonstração
+Veja abaixo uma foto do projeto.
+[![Image from Gyazo](https://i.gyazo.com/e55a0f1164623bf637d6b10eb5058f2d.png)](https://gyazo.com/e55a0f1164623bf637d6b10eb5058f2d)
 
-### 📦 Install
+O projeto tem como base o: https://reactavancado.com.br/
 
-```
-$ git clone https://github.com/guilouro/simple-nextjs-quick-start.git
 
+## 🎯 Objetivo do projeto
+Este projeto foi desenvolvido durante o curso de React Avançado na Udemy. Com foco na aprendizagem de React, NextJS, Server Side Rendering, GraphQL, etc.
+
+## 📝 Tecnologias 
+Para a realização desse projeto foram utilizadas as seguintes tecnologias/linguagens: 
+- [React](https://pt-br.reactjs.org/)
+- [NextJS](https://nextjs.org/) 
+- [Strapi](https://strapi.io/) 
+- [Styled components](https://styled-components.com)
+- [GraphQL](https://graphql.org/)
+- [Jest](https://jestjs.io/)
+- [StoryBook](https://storybook.js.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## ⚙️ Instalação
+Para que este rode em sua máquina, siga os passos abaixo:
+
+```bash
+# Clone o repositório em alguma pasta em sua máquina
+$ git clone https://github.com/CaioAugustoo/react-avancado
+
+# Entre no repositório
+$ cd react-avancado
+
+Instale as dependencias digitando no termimal:
 $ yarn install
-```
 
-### 🔨 How to use
-
-Runs next which starts Next.js in development mode
-
-```bash
-$ yarn dev
-```
-
-Runs next build which builds the application for production usage
-
-```bash
-$ yarn build
-```
-
-Runs next start which starts a Next.js production server
-
-```bash
+Rode a aplicação no modo de desenvolvimento.
 $ yarn start
-```
 
-Runs next build and export which exports a files in a `out` folder to deploy
-
-```bash
-$ yarn deploy
+Abra http://localhost:3000 no seu navegador para visualizar o projeto
 ```
