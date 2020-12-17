@@ -95,6 +95,20 @@ const GET_LANDING_PAGE = /* GraphQL */`
       reviews {
         name
         text
+        image {
+          alternativeText
+          url
+        }
+      }
+    }
+  }
+
+  fragment sectionFaq on LandingPage {
+    sectionFaq {
+      title
+      questions {
+        question
+        answer
       }
     }
   }
@@ -126,6 +140,7 @@ const GET_LANDING_PAGE = /* GraphQL */`
       ...pricingBox
       ...sectionAboutUs
       ...sectionReviews
+      ...sectionFaq
     }
   }
 `
