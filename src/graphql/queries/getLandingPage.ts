@@ -89,6 +89,16 @@ const GET_LANDING_PAGE = /* GraphQL */`
     }
   }
 
+  fragment sectionReviews on LandingPage {
+    sectionReviews {
+      title
+      reviews {
+        name
+        text
+      }
+    }
+  }
+
   fragment header on LandingPage {
     header {
       title
@@ -115,6 +125,7 @@ const GET_LANDING_PAGE = /* GraphQL */`
       ...sectionAgenda
       ...pricingBox
       ...sectionAboutUs
+      ...sectionReviews
     }
   }
 `
