@@ -1,17 +1,11 @@
-/* eslint-disable prettier/prettier */
 import React, { useEffect } from 'react'
 import ResizeObserver from 'resize-observer-polyfill'
+import { Review } from 'types/api'
 
 import * as S from './styles'
 
-type Props = {
-  id: number
-  name: string
-  image: string
-  description: string
-}
 
-const ReviewCard: React.FC<Props> = ({ id, name, image, description }) => {
+const ReviewCard = ({ id, name, text }: Review) => {
   useEffect(() => {
     const texts = document.querySelectorAll('p.description')
 
@@ -31,26 +25,11 @@ const ReviewCard: React.FC<Props> = ({ id, name, image, description }) => {
   return (
     <S.Card>
       <S.User>
-        <S.Image>
-          <source
-            srcSet={require(`@images/reviews/${image}?webp`)}
-            type="image/webp"
-          />
-          <source
-            srcSet={require(`@images/reviews/${image}`)}
-            type="image/jpg"
-          />
-          <img
-            src={require(`@images/reviews/${image}`)}
-            loading="lazy"
-            alt={name}
-          />
-        </S.Image>
         <S.Name>{name}</S.Name>
       </S.User>
       <S.Text>
         <input type="checkbox" id={`review-${id}`} />
-        <p className="description">{description}</p>
+        <p className="description">{text}</p>
         <label className="label-more" htmlFor={`review-${id}`}>
           Ver tudo
         </label>
