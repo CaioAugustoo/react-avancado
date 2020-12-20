@@ -21,7 +21,7 @@ const ProfileCard: React.FC<Author> = ({
   description
 }) => (
   <S.Card key={name}>
-    <S.Image src={getImageUrl(photo.url)} alt={photo.alternativeText} />
+    <S.Image src={photo.url} alt={photo.alternativeText} />
     <S.Name>{name}</S.Name>
     <S.Role>{role}</S.Role>
     {socialLinks !== null && <S.SocialLinks>

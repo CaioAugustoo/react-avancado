@@ -11,7 +11,7 @@ const SectionAboutProject = ({ title, description, image }: SectionAboutProjects
   <S.Wrapper>
     <Container>
       <S.Container>
-        <S.Image src={getImageUrl(image.url)} alt={image.alternativeText} loading="lazy" />
+        <S.Image src={image.url} alt={image.alternativeText} loading="lazy" />
         <div>
           <Heading>{title}</Heading>
           <S.Text dangerouslySetInnerHTML={{ __html: description}}/>

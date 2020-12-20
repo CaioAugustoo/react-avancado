@@ -39,7 +39,7 @@ const SectionHero = ({logo, header}: Props) => (
           </S.ButtonWrapper>
         </S.TextBlock>
         <S.Image
-          src={getImageUrl(header.image.url)}
+          src={header.image.url}
           alt={header.image.alternativeText}
         />
       </S.Content>
