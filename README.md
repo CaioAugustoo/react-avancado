@@ -8,7 +8,7 @@ Landing page de divulgação do curso React Avançado do Instrututor Willian Jus
 Veja abaixo uma foto do projeto.
 [![Image from Gyazo](https://i.gyazo.com/e55a0f1164623bf637d6b10eb5058f2d.png)](https://gyazo.com/e55a0f1164623bf637d6b10eb5058f2d)
 
-O projeto tem como base o: https://reactavancado.com.br/
+Você pode conferir o resultado final em: https://react-avancadoo.netlify.app
 
 
 ## 🎯 Objetivo do projeto
